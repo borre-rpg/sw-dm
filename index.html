@@ -1,12 +1,59 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html class="edge-of-the-empire-themed" lang="en" >
    <head>
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="styles/swrpgaor.min.css">
+      <link rel="stylesheet" href="styles/swlayout.css">
       <title>My Campaign</title>
    </head>
    <body ng-app="myApp" ng-cloak>
       <h1>A long time ago in a galaxy far far away...</h1>
+
+      <div class="sw-twocolumn">
+         <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat in id, provident, laborum optio explicabo minima, iste modi laudantium unde esse blanditiis accusamus deleniti accusantium pariatur! Ea fuga quisquam error.
+         </p>
+
+         <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat in id, provident, laborum optio explicabo minima, iste modi laudantium unde esse blanditiis accusamus deleniti accusantium pariatur! Ea fuga quisquam error.
+         </p>
+         <npc name="Example NPC" rank="nemesis" brawn="3" agility="2" intelligence="2" willpower="2" cunning="3" presence="4" soak="3" wounds="15" strain="10">
+               
+                       <skills athletics="2" ranged-light="4" />
+               
+                       <abilities>Add <boost></boost> when making a Persuasion Check</abilities>
+               
+                       <weapon name="frag grenades" skill="Ranged (Light)" damage="2" pierce="5" blast="9" critical="5" range="short" ammo="1" quantity="3"></weapon>
+               
+         </npc>
+         <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat in id, provident, laborum optio explicabo minima, iste modi laudantium unde esse blanditiis accusamus deleniti accusantium pariatur! Ea fuga quisquam error.
+            </p>
+   
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat in id, provident, laborum optio explicabo minima, iste modi laudantium unde esse blanditiis accusamus deleniti accusantium pariatur! Ea fuga quisquam error.
+            </p>
+         <blackbox title="how dice work">
+               <p>
+               Success <success></success> rolls mean your character successfully completed a task. They are a very important mechanic and need to be tracked. They're cancelled by Failure results, but that's okay because you'll roll more successes than failures if your character doesn't try anything too silly! </p>
+               <p>
+               Failure <failure></failure> rolls mean your character failed at completing a task. If your character rolled too many of these, you probably tried a task that you shouldn't have. That's too bad, don't do that next time! </p>
+         </blackbox>
+         <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat in id, provident, laborum optio explicabo minima, iste modi laudantium unde esse blanditiis accusamus deleniti accusantium pariatur! Ea fuga quisquam error.
+         </p>
+
+         <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat in id, provident, laborum optio explicabo minima, iste modi laudantium unde esse blanditiis accusamus deleniti accusantium pariatur! Ea fuga quisquam error.
+         </p>
+
+         <narrative>
+            <p>
+            The holo-transmission zooms in on the Emperor's throne, where he is about to speak. The lighting is dark, and to each entrance of his spire a crimson Royal Guard stands watch. </p>
+            <p>
+            "The Empire is on the verge of success. Soon peace and order will be restored throughout the galaxy. Even now our capable forces lead by Darth Vader are striking back at the rebel insurgents." </p>
+            </narrative>
+      </div>
 
       <h3>Table of contents</h3>
       <ul>
@@ -20,7 +67,9 @@
     <h2 id="encounters">Encounters</h2>
     <h2 id="rules">Rules</h2>
     <h2 id="npc">NPC's</h2>
-    
+    <ul>
+      <li><a href="npc/threek.html">Threek</a></li>
+    </ul>
    </body>
    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
    <script src="scripts/swrpgaor.min.js"></script>

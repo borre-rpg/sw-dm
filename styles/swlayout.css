@@ -1,0 +1,37 @@
+body {
+   width: 90%;
+}
+
+.sw-twocolumn {
+   column-count: 2;
+   column-width: 530px;
+   column-gap: 40px;
+}
+
+.npc-wrapper {
+   -webkit-column-break-inside: avoid;   
+}
+
+.starship-wrapper {
+   -webkit-column-break-inside: avoid;   
+}
+
+.redbox {
+   max-width: 100%;
+ }
+
+@media all and (max-width: 900px) {
+   body {
+       width: 85%;
+   }
+
+   h1, h2, h3, h4, h5, p {
+       padding-left: 5px;
+       padding-right: 5px;
+   }
+
+   .blackbox, .redbox-wrapper {
+       margin-left: 5px;
+       margin-right: 5px;
+   }
+}
