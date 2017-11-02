@@ -9,29 +9,37 @@
    </head>
    <body ng-app="myApp" ng-cloak>
       <h1>Threek</h1>
-
+      <div class="sw-twocolumn">
+      <npc name="Threek" rank="nemesis" brawn="2" agility="3" intellect="4" willpower="3" cunning="3" presence="2" soak="2"
+      wounds="11" strain="13">
+   
+      <skills 
+      medicine="2" 
+      ranged-heavy="2" 
+      resilience="1"
+      stealth="1"
+      survival="1"
+      vigilance="2"
+      />
+   
+      <abilities>
+            <em>Heightened Smell</em> - Ewoks may remove all <setback></setback> imposed due to concealment against a target that is within Short Range. 
+            <em>Reduced Silhouette</em> - Ewoks have a Silhouette of 0.
+      </abilities>
+   
+      <weapon name="blaster rifle" skill="Ranged (Heavy)" damage="9" critical="3" range="long" stun="1"></weapon>
+      </npc>
       Threek er en Ewok shaman fra Bright Tree Village på Endor. Threeks far, Eek var landsbyshaman, og Threek selv var forventet å ta over denne posten etter sin fars død. Det viste seg dog etterhvert som Threek vokste til at det var et mørke som bodde i ham, og dette skremte landsbyboerne. Som sine forfedre gjenneom mange generasjoner har Threek Kraften, men den mørke siden har fått godt fotfeste i den lille hårballen... 
-
-      <p>
-      Av utseende er Threek en typisk Ewok med mørk pels, han har hvite felter rundt øynene og munnen, noe som gir ham et lett demonisk utseende. De sorte teddybjørn-øynene har også en veldig svak, men merkbar rødorange glød langt der inne i mørket.
-      </p>
-      <p>
-         Threek liker å kle seg i utypiske Ewok-klær, han går normalt i en lang lærfrakk sammen med en tradisjonell dyprød Ewok-hodekutte.
-      </p>
-
-      <h3>Table of contents</h3>
-      <ul>
-        <li><a href="#campaigns">Campaigns</a></li>
-        <li><a href="#encounters">Encounters</a></li>
-        <li><a href="#rules">Rules</a></li>
-        <li><a href="#npc">NPC's</a></li>
-    </ul>
-
-    <h2 id="setup">Campaigns</h2>
-    <h2 id="encounters">Encounters</h2>
-    <h2 id="rules">Rules</h2>
-    <h2 id="npc">NPC's</h2>
-    
+      
+            <h2>Beskrivelse</h2>
+            <p>
+            Av utseende er Threek en typisk Ewok med mørk pels, han har hvite felter rundt øynene og munnen, noe som gir ham et lett demonisk utseende. De sorte teddybjørn-øynene har også en veldig svak, men merkbar rødorange glød langt der inne i mørket.
+            </p>
+            <p>
+               Threek liker å kle seg i utypiske Ewok-klær, han går normalt i en lang lærfrakk sammen med en tradisjonell dyprød Ewok-hodekutte.
+            </p>      
+      </div>
+   
    </body>
    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
    <script src="../scripts/swrpgaor.min.js"></script>
