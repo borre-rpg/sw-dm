@@ -29,10 +29,51 @@
             <h2>Bakgrunn</h2>
             Ice Station Zulu er en forskningsstasjon under ledelse av den gale Dr. Tui, og hans høyre hånd Major Ren Corsol. Dr. Tui er en briljant genetiker som jobber for å skape den ultimate supersoldaten. Etter å ha studert historiene om <a href="http://starwars.wikia.com/wiki/Karness_Muur">Karness Muur</a> og <a href="http://starwars.wikia.com/wiki/Rakghoul_plague">Rakghoul-pesten</a>, ble han besatt av tanken på å gjenoppvekke denne mutasjonen i en kontrollert form, slik at han kunne generere en hær av supersoldater under hans kommando. 
 
-            <h2>Experimentell lab</h2>
+            <h2>Eksperimentell lab</h2>
             Glasskap merket XR-12: Inneholder 20 små, gjennomsiktige beholdere ordnet i to rader med 10 beholdere i hver. Den øverste raden er merket "XR-12 Virus" og den andre "XR-12 Antigen".
-            Skapet har en kodelås som kun Dr. Tui og hans nærmeste medarbeidere kan. Låsen kan dirkes med en enkel Skulduggery (
+            Skapet har en kodelås som kun Dr. Tui og hans nærmeste medarbeidere kan. Låsen kan dirkes med en <check skill="skulduggery" dif="1"></check>, eller brytes opp med en <check skill="brawn" dif="1"></check> men dette vil trigge alarmen. Skapet har altå en alarm som kan oppdages med en <check skill="perception" dif="2"></check>, og  skrus av med en <check skill="skulduggery" dif="3"></check> Den kan også skrus av via dataterminalene i rommet med en <check skill="computers" dif="3"></check>
+            <p>
+            Dersom alarmen går vil dette varsle vaktene i siderommet. Det vil også vekke de to super-rakghoulene som vil bryte seg ut etter et passende antall runder (om ikke annet etter to runder combat).
             
+            Når de to super-rakghoulene bryter seg ut av tankene sine, vil anleggets selvdestrueringsmekanisme aktiveres:
+            
+            En hes sirene skjærer i ørene deres, før en pulserende durelyd fra det mystiske elektriske anlegget midt i salen fyller rommet. Alle skjermene i terminalbankene rundt den sentrale generatoren skifter til et felles display; En klokke som teller ned fra 10 minutter.
+            
+            For å desarmere denne mekanismen kreves 2 vanskelige (ddd) computers-sjekker for å stoppe timeren og eventuelt omprogrammere den. Hvert forsøk tar ett minutt. 
+            
+            I utgangspunktet tar det 5 minutter å klatre opp stigen, men en vellykket Athletics-sjekk kan få det ned tiden. Hver suksess (s) reduserer tiden med ett minutt, ned til minimum 2 minutter. Hver failure (f) øker tiden med 1 minutt. En despair (y) fører til at  RP´en faller ned og tar 10 skade (modifisert med Athletics/Coordination-sjekk, se s.215)
+            
+            <npc name="Dr. Tui" rank="nemesis" brawn="2" agility="1" intellect="4" willpower="3" cunning="3" presence="2" soak="2"
+            wounds="12" strain="14">
+         
+            <skills 
+            charm="2"
+            coercion="2"
+            cool="2"
+            discipline="3"
+            knowledge-education="4"
+            knowledge-xenology="4"
+            mechanics="3"
+            medicine="5" 
+            negotiation="3"
+            perception="2"
+            ranged-light="2" 
+            vigilance="2"
+            />
+            <talents>
+                  Anatomical Expertise (once per session after a successful combat check, add 4 damage to the result).
+                  Master Doctor (once per round suffer 2 strain to decrease the difficulty of a Medicine check by 1).
+                  Surgeon 3 (when making a Medficine check to help a character recover wounds, the target recovers 3 additiona wounds).
+            </talents>
+            <abilities>
+                  Adversary 2 (upgrade all incoming combat checks twice).
+                  Cybernetic Microscopic Vision (Tui gains +1 ranks in Vigilance and Perception and can zoom in to see items and organisms in the microscopic realm.)
+            </abilities>
+         
+            <weapon name="blaster pistol" skill="Ranged (Light)" damage="6" critical="4" range="medium" stun="1"></weapon>
+            </npc>
+      
+
          </div>
    </body>
    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
